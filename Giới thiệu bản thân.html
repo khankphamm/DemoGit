@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com" />
+    <link href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap" />
+    <link rel="stylesheet" href="test.css" />
+    <title>Giới thiệu bản thân</title>
+</head>
+<style>
+    /* Slideshow container */
+    .slideshow-container {
+        max-width: 1000px;
+        position: relative;
+        margin: auto;
+    }
+
+
+    .prev,
+    .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: #bbb;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+
+    .prev {
+        left: 0;
+    }
+
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+
+
+    .prev:hover,
+    .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+
+
+    .text {
+        color: #f2f2f2;
+        font-size: 15px;
+        padding: 8px 12px;
+        position: absolute;
+        bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+
+    .active,
+    .dot:hover {
+        background-color: #717171;
+    }
+
+
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+        from {
+            opacity: .4
+        }
+
+        to {
+            opacity: 1
+        }
+    }
+
+
+    @media only screen and (max-width: 300px) {
+
+        .prev,
+        .next,
+        .text {
+            font-size: 11px
+        }
+    }
+</style>
+
+<body>
+    <script src="https://kit.fontawesome.com/8bb25dd9e1.js" crossorigin="anonymous"></script>
+    <section id="overlay"></section>
+    <header>
+        <div class="container">
+            <nav class="navbar">
+                <div class="navbar__logo">
+                    <img src="file anh/ava.jpg" alt="" style="border-radius:80px ;" />
+                </div>
+                <ul class="navbar__links">
+                    <li class="navbar__link"><a style="font-weight:520; font-size: 20px;" href="#banner">Home</a></li>
+                    <li class="navbar__link"><a style="font-weight:520; font-size: 20px;" href="#things">About</a></li>
+                    <li class="navbar__link"><a style="font-weight:520; font-size: 20px;" href="#works">Works</a></li>
+                    <li class="navbar__link"><a style="font-weight:520; font-size: 20px;"
+                            href="#testimonials">Testimonials</a></li>
+                    <a href="#footer"><button style="font-weight:520; font-size: 20px;"
+                            class="navbar__btn">Contact</button></a>
+                </ul>
+
+                <div class="navbar__icons">
+                    <div class="navbar__icon"></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <section id="banner">
+        <div class="container">
+
+            <div class="banner__img">
+                <img src="file anh/ava3.jpg" alt="" style="width:430px ;height:500px;  border-radius: 100px;" />
+            </div>
+
+            <div class="banner__heading">
+                <h1>Phạm Hữu Khánh</h1>
+                <p class="chu1">
+                    Xin chào mọi người, tôi rất vui khi được các bạn xem Portfolio của tôi nếu các bạn có
+                    góp ý hãy liên hệ với tôi!
+                </p>
+                <a href="#"><button class="banner__btn">View More</button></a>
+                <div class="banner__socials">
+                    <a href="https://www.facebook.com/khankphamm" target="_blank"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/khank.phamm/" target="_blank"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="things">
+        <div class="container">
+
+            <div class="things__dec">
+                <img src="file anh/hinh khoi.png" alt="" />
+            </div>
+
+            <div class="things__dec">
+                <img src="file anh/hinh khoi.png" alt="" />
+            </div>
+
+            <h2>About me</h2>
+
+            <div class="things__item">
+                <video controls muted autoplay loop width="490px" height="300px">
+                    <source src="file anh/video.mp4">
+                </video>
+                <img src="" alt="">
+                <div class="things__item--heading">
+                    <h3>Bản thân</h3>
+                    <p>
+                        Tôi là sinh viên năm 2 <br> Học ngành công nghệ thông tin của trường đại học Thủ Đô Hà
+                        Nội
+
+                    </p>
+                </div>
+            </div>
+
+            <div class="things__item">
+                <img src="https://fastwinner.vn/wp-content/uploads/2020/02/ky-nang-la-gi.jpg" alt="" />
+
+                <div class="things__item--heading">
+                    <h3>Kĩ năng</h3>
+                    <p> Có khả năng làm việc nhóm, thuyết trình tốt <br>
+                        Sử dụng, giao tiếp Tiếng anh ở mức trung bình <br>
+                        Sử dụng thành thạo kĩ năng văn phòng </p>
+
+
+                </div>
+            </div>
+
+            <div class="things__item">
+
+                <img src="file anh/it.jfif" alt="" />
+
+                <div class="things__item--heading">
+                    <h3>Mong muốn trong tương lai</h3>
+                    <p>
+                        Trở thành một lập trình viên hoặc kiểm duyệt viên
+                        Thành thạo và giao tiếp tốt Tiếng anh để có thêm nhiều cơ hội trong công việc và cuộc sống
+                        Đạt được mức thu nhập ổn định màmà bản thân đã đề ra
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="works">
+        <div class="container">
+
+            <div class="works__dec">
+                <img src="file anh/hinh khoi.png" alt="" />
+            </div>
+            <div class="works__dec">
+                <img src="file anh/hinh khoi.png" alt="" />
+            </div>
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <img src="file anh/slide2.jpg" style="width:100%">
+
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="file anh/slide8.jpg" style="width:100%">
+
+                </div>
+
+                <div class="mySlides fade">
+                    <img src="file anh/slide9.jpg" style="width:100%">
+
+                </div>
+                <div class="mySlides fade">
+                    <img src="file anh/slide6.jpg" style="width:100%">
+
+                </div>
+                <div class="mySlides fade">
+                    <img src="file anh/slide7.jpg" style="width:100%">
+
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+            </div><br>
+
+
+            <h2 style="margin-bottom: 20px;">Works</h2>
+
+            <div class="id">
+                <div class="dropdown">
+                    <button class="dropbtn">Buổi 1</button>
+                    <div class="dropdown-content">
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%201/bt1.html" target="_blank">bài 1</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%201/bt2,1.html" target="_blank">bài
+                            2.1</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%201/bt2,2.html" target="_blank">bài
+                            2.2</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%201/bt2.3.html" target="_blank">Bài
+                            2.3</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%201/bt3.html" target="_blank">Bài 3</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Buổi 2</button>
+                    <div class="dropdown-content">
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%202/bt5.html" target="_blank">Bài 1</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%202/bt2.3.html" target="_blank">Bài
+                            2.1</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%202/bt6.html" target="_blank">Bài
+                            2.2</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%202/bt7.html" target="_blank">Bài
+                            2.3</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Buổi 3</button>
+                    <div class="dropdown-content">
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%203/bt8.html" target="_blank">Bài 1</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%203/bt9.html" target="_blank">Bài 2</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%204/web%20ca%20nhan.html"
+                            target="_blank">Bài 3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Buổi 4</button>
+                    <div class="dropdown-content">
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%204/bt9.html" target="_blank">Bài 1</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%204/bt12.html" target="_blank">Bài
+                            2</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%204/bt11.html" target="_blank">Bài
+                            3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Buổi 5</button>
+                    <div class="dropdown-content">
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%205/bt13.html" target="_blank">Bài
+                            1</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%205/bt14.html" target="_blank">Bài
+                            2</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%205/bt15.html" target="_blank">Bài
+                            3</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Buổi 6</button>
+                    <div class="dropdown-content">
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%206/bt16.html" target="_blank">Bài
+                            1</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%206/bt17.html" target="_blank">Bài
+                            2</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%206/bt18.html" target="_blank">Bài
+                            3</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Buổi 7</button>
+                    <div class="dropdown-content">
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%207/bt%20buoi%207.html"
+                            target="_blank">Bài tập</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Buổi 8</button>
+                    <div class="dropdown-content">
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%208/bt%20buoi%208.1.html"
+                            target="_blank">Bài 1</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%208/bt%20buoi%208,2.html"
+                            target="_blank">Bài 2</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%208/bt%20buoi%208,4.html"
+                            target="_blank">Bài 3</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%208/bt%20buoi%208,3.html"
+                            target="_blank">Bài 4</a>
+
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Buổi 9</button>
+                    <div class="dropdown-content">
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%209/bt%20buoi%209.1.html"
+                            target="_blank">Bài 1</a>
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi%209/bt%20buoi%209.2.html"
+                            target="_blank">Bài 2</a>
+
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="dropbtn">Bài Ktra 30%</button>
+                    <div class="dropdown-content">
+                        <a href="https://khankphamm.000webhostapp.com/bai%20ktra30.html" target="_blank">Bài 30%</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Buổi 11</button>
+                    <div class="dropdown-content">
+                        <a href="https://khankphamm.000webhostapp.com/bt%20buoi11.html" target="_blank">Bài tập</a>
+                    </div>
+                </div>
+
+                <h2 style="margin:30px 0px 20px 0px;">Office Skill</h2>
+
+                <div class="footer__contact">
+                    <a href="#">
+                        <i class="fa-brands fa-html5"></i>
+                        <p>HTML</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-css3-alt"></i>
+                        <p>CSS</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-node-js"></i>
+                        <p>JavaScript</p>
+                    </a>
+                    <a href="#">
+                        <i class="fa-solid fa-c"></i>
+                        <p>C,C++</p>
+                    </a>
+                    <a href="#">
+                        <img src="file anh/logo2.png" alt="" style="width:15px">
+                        <p>Photoshop</p>
+                    </a>
+                    <a href="#">
+                        <img src="file anh/logo3.jpg" alt="" style="width:15px">
+                        <p>Word</p>
+                    </a>
+                    <a href="#">
+                        <img src="file anh/logo4.jpg" alt="" style="width:15px">
+                        <p>Excel</p>
+                    </a>
+                    <a href="#">
+                        <img src="file anh/logo5.jpg" alt="" style="width:15px">
+                        <p>Powerpoint</p>
+                    </a>
+                </div><br>
+
+                <div class="works__btn">
+                    <a href="#" class="buttun"><button>View Works</button></a>
+                </div>
+            </div>
+        </div>
+    </section><br>
+
+    <section id="testimonials">
+        <div class="container">
+            <center>
+                <h2>Testimonials</h2>
+            </center>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div id="testimonial-slider" class="owl-carousel">
+                            <div class="testimonial">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-icon">
+                                        <i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <p class="description">
+                                        Cần cố gắng hơn em nhé!
+                                    </p>
+                                </div>
+                                <h3 class="title">Giảng viên</h3>
+                                <span class="post">Trần Thị Thu Thương</span>
+                            </div>
+
+                            <div class="testimonial">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-icon">
+                                        <i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <p class="description">
+                                        Bài web nhìn trông cũng được, hình ảnh, bố cục sắp xếp đẹp mắt.
+                                    </p>
+                                </div>
+                                <h3 class="title">Bạn</h3>
+                                <span class="post">Nguyễn Thế Đức</span>
+                            </div>
+
+                            <div class="testimonial">
+                                <div class="testimonial-content">
+                                    <div class="testimonial-icon">
+                                        <i class="fa fa-quote-left"></i>
+                                    </div>
+                                    <p class="description">
+                                        Trang web dễ nhìn, sáng sủa, bố cục sắp xếp đẹp mắt, màu sắc hài
+                                        hòa!
+                                    </p>
+                                </div>
+                                <h3 class="title">Thiết kế</h3>
+                                <span class="post">Web Developer</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
+    <footer id="footer">
+        <div class="container">
+
+            <div class="footer__dec">
+                <img src="file anh/hinh khoi.png" alt="" />
+            </div>
+
+            <div class="footer__img" style="height: 300px; ">
+                <img src="file anh/hinh khoi.png" alt="" />
+
+            </div>
+            <center>
+                <div class="footer__heading">
+                    <h1>Liên hệ với tôi</h1><br>
+
+                    <form action="/action_page.php" target="_blank">
+                        <p><input class="send" type="text" placeholder="Name" required name="Name"></p>
+                        <p><input class="send" type="text" placeholder="Email" required name="Email"></p>
+                        <p><input class="send" type="text" placeholder="Subject" required name="Subject"></p>
+                        <p><input class="send" type="text" placeholder="Message" required name="Message"></p>
+                        <p><br>
+                            <button type="submit">
+                                <i class="fa fa-paper-plane"></i>
+                                SEND MESSAGE
+                            </button>
+                        </p>
+                    </form>
+                </div>
+            </center>
+
+            <div class="footer__contact">
+                <a href="tel:0985026313">
+                    <center><i class="fas fa-phone-alt"></i></center>
+                    <p>+84 5026 313</p>
+                </a>
+                <a href="mailto:phamhuukhanh1303@gmail.com">
+                    <center><i class="fas fa-envelope"></i></center>
+                    <p>phamhuukhanh1303@gmail.com</p>
+                </a>
+            </div>
+            <div class="banner__socials0">
+                <a href="https://www.facebook.com/khankphamm" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/khank.phamm/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></i></a>
+                <a href="https://twitter.com/home" target="_blank"><i class="fa-brands fa-twitter"></i></i></a>
+            </div>
+            <center><a href="#"><button style="margin-top: 30px;" class="banner__btn">View More</button></a></center>
+        </div>
+        </div>
+    </footer>
+</body>
+<script src="test.js"></script>
+
+</html>
